@@ -1,38 +1,217 @@
-.App {
-  text-align: center;
+
+/* table row styles */
+
+body {
+    background: rgba(225, 221, 221, 0.475);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contain{
+  margin: 0.2% 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.dataRow {
+  margin-top: 0.7rem;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.thRow{
+  line-height: 2rem;
+    margin: 0.4rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.row-center{
+  align-items: center;justify-self: center;
+}
+.box{
+  border-radius: 0px 30px;
+  margin: 3rem 0.7rem;
+  font-size: 20;
+  font-style: bold;
+}
+.col-3{
+  width: 23%;
+}
+.missed{
+  background-color: #ffc0cb6e;
+}
+.reshedule{
+  background-color: #edcc905a;
+}
+.passed{
+  background-color: rgba(75, 131, 75, 0.213);
+}
+.pending{
+    background-color: rgba(123, 159, 237, 0.213);
+}
+
+.line{
+  width: 60%;
+  height: 5px;
+  margin-top: -5px;
+  margin-left: 10%;
+  background-color: #dc8a98;
+}
+.appontment_list{
+  color: #dc8a98;
+}
+
+new-record{
+  color: black;
+}
+
+.new-record-line{
+  width: 5%;
+  height: 2px;
+  margin-top: 1rem;
+  background-color: #dc8a98;
+}
+.col-md-2{
+  width: 20%;
+}
+.icon-rtl {
+  padding-right: 40px;
+  background: url("./asserts/search_icon.png") no-repeat right;
+  background-size: 20px;
+}
+
+.icon-select {
+  padding-right: 40px;
+  background: url("./asserts/chervon.webp") no-repeat right;
+  background-size: 20px;
+}
+
+.icon-back {
+  padding-right: 40px;
+  margin-left: -3rem;
+  background: url("./asserts/back.png") no-repeat right;
+  width: 35px;
+  height: 35px;
+  background-size: 30px;
+}
+
+.icon-plus {
+  /* margin-top: 1.5rem; */
+  /* padding-right: 40px; */
+  background-color: white;
+  background: url("./asserts/plus.png") no-repeat center;
+  width: 35px;
+  height: 35px;
+  background-size: 30px;
+}
+
+.icon-sort {
+  padding-right: 40px;
+  background: url("./asserts/sort_icon.png") no-repeat right;
+  background-size: 20px;
+  background-color: white;
+}
+
+.btn {
+  background-color: #dc8a98;
+}
+.btn:hover{
+  background-color:#dc8a98 ;
+}
+
+.status-missed {
+  background-color: #ffc0cb6e;
+  padding: 0.5rem 1rem;
+    border-radius: 15px;
+
+}
+
+.status-reshedule {
+  background-color: #edcc905a;
+  padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.status-passed {
+  background-color: rgba(75, 131, 75, 0.213);
+  padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.status-pending {
+  background-color: rgba(123, 159, 237, 0.213);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+.col-1{
+    width: 9%;
+}
+
+.col-agetime{
+  width: 5%;
+}
+.col-2{
+width: 13.5%;
+}
+
+ .row-design{
+    position: relative;
+ }
+.backgound{
+  height: 3.5rem;
+  background-color:#3a607d;
   color: white;
+  border-bottom-right-radius: 150px;
+  position: absolute;
+  z-index: 10;
+}
+.bg-dark{
+height: 3.5rem;
+position: absolute;
+z-index: 0;
+}
+.nav-link{
+  margin-left: 150px;
+}
+a{
+  margin-left: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.page-item.active .page-link {
+  background-color: #dc8a98;
+  border-color: #FFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-link {
+  color: gray;
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+}
+
+.page-link:hover {
+  color: #000;
+}
+.pagination * {
+  margin: 0.15rem;
+  background-color: white;
+  border-radius: 10px !important;
+}
+
+.pagination *>ul>li>a {
+  width: 50%;
+  background-color: white;
+  bottom: 1px solid white;
+  justify-content: center;
+}
+
+.plasceholder{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88vh;
 }
